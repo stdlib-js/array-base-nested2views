@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,16 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Collection, AccessorArrayLike, ArrayLike } from '@stdlib/types/array';
 
 /**
-* Convert nested arrays to composite views.
+* Property key.
+*/
+type PropertyKey = string | number | symbol;
+
+/**
+* Converts each nested array to a composite view.
 *
-* @module @stdlib/array-base-nested2views
+* ## Notes
+*
+* -   The function assumes that all nested arrays have the same length.
+* -   The number of provided array labels should equal the length of each nested array.
+* -   Each view in the returned array shares the same memory as the corresponding elements in the input arrays. Accordingly, mutation of either a nested array or a view will mutate the other.
+*
+* @param arr - input array
+* @param fields - list of field names
+* @returns output array
 *
 * @example
-* var nested2views = require( '@stdlib/array-base-nested2views' );
-*
 * var x = [ [ 1, 2 ], [ 3, 4 ] ];
 * var fields = [ 'x', 'y' ];
 *
@@ -53,12 +68,9 @@
 * var y = x.slice();
 * // returns [ [ 5, 2 ], [ 3, 'beep' ] ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function nested2views<T = unknown, U extends PropertyKey = PropertyKey>( arr: ArrayLike<Collection<T> | AccessorArrayLike<T>>, fields: Collection<U> | AccessorArrayLike<U> ): Array<Record<U, T>>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = nested2views;
