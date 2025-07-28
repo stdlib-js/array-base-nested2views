@@ -1,5 +1,0 @@
-"use strict";var y=function(s,i){return function(){return i||s((i={exports:{}}).exports,i),i.exports}};var g=y(function(J,p){
-var o=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),N=require('@stdlib/utils-define-read-write-accessor/dist'),d=require('@stdlib/array-base-resolve-getter/dist'),m=require('@stdlib/array-base-accessors/dist'),O=require('@stdlib/array-base-copy/dist');function k(s,i){var a,c,v,u,f,e;if(u=s.length,u<1)return[];if(a=d(s),f=a(s,0).length,f<1)return[];c=O(i);function h(r){var t=m(r).accessors;return o(this,"_arr",r),o(this,"_get",t[0]),o(this,"_set",t[1]),this}for(e=0;e<f;e++)N(h.prototype,c[e],l(e),_(e));for(o(h.prototype,"toJSON",q),v=[],e=0;e<u;e++)v.push(new h(a(s,e)));return v;function l(r){return t;function t(){return this._get(this._arr,r)}}function _(r){return t;function t(n){this._set(this._arr,r,n)}}function q(){var r,t,n;for(r={},n=0;n<u;n++)t=c[n],r[t]=this[t];return r}}p.exports=k
-});var w=g();module.exports=w;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
