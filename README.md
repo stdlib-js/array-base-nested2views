@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@esm/index.mjs';
+import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@v0.1.0-esm/index.mjs';
 ```
 
 #### nested2views( arr, fields )
@@ -113,7 +113,7 @@ Each element in the returned array is a class instance having prototype properti
 
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
 import filled2dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled2d-by@esm/index.mjs';
-import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@esm/index.mjs';
+import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@v0.1.0-esm/index.mjs';
 
 var x = filled2dBy( [ 10, 2 ], discreteUniform( -100, 100 ) );
 var fields = [ 'x', 'y' ];
