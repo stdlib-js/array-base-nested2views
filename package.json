@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-nested2views",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert nested arrays to composite views.",
   "license": "Apache-2.0",
   "author": {
@@ -46,7 +46,7 @@
     "@stdlib/utils-define-read-write-accessor": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-base-filled2d": "^0.2.2",
+    "@stdlib/array-base-filled2d": "^0.2.3",
     "@stdlib/array-base-filled2d-by": "^0.2.2",
     "@stdlib/array-base-to-accessor-array": "^0.2.2",
     "@stdlib/assert-is-array": "^0.2.2",
