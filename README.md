@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-nested2views/tags). For example,
+
+```javascript
 import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@v0.1.1-deno/mod.js';
 ```
 
@@ -108,7 +113,7 @@ Each element in the returned array is a class instance having prototype properti
 ```javascript
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
 import filled2dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled2d-by@deno/mod.js';
-import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@v0.1.1-deno/mod.js';
+import nested2views from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-nested2views@deno/mod.js';
 
 var x = filled2dBy( [ 10, 2 ], discreteUniform( -100, 100 ) );
 var fields = [ 'x', 'y' ];
